@@ -45,7 +45,7 @@ impl DonHooks for Product {
 #[tokio::main]
 async fn main() {
     dotenvy::dotenv().ok();
-    println!("🦀 Welcome to your new Don Framework App!");
+    println!(" Welcome to your new Don Framework App!");
 
     let api_routes = Router::new()
         .nest("/api/products", Product::get_api_routes())
